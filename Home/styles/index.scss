@@ -1,0 +1,141 @@
+.Main-Root-Router-Wrapper {
+  width: inherit;
+  height: inherit;
+}
+
+.Are-you-a {
+  width: 83px;
+  height: 12px;
+  opacity: 0.74;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.67;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+}
+
+.Consumer, .Contractor {
+  width: 190px;
+  height: 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.67;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.Sign-up-as-a-Consume, .Sign-up-as-a-Contrac {
+  width: 312px;
+  height: 56px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.75;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4a4a4a !important;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+}
+
+// Header component css
+.mjv-logo {
+  width: 45px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.Sign-in-container {
+  margin-right: 20px;
+  width: 350px;
+}
+
+.Already-Have-an-account {
+  height: 10px;
+  font-size: 13px;
+  line-height: 0.73;
+  color: #cccccc;
+}
+
+.Registration-Wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
+  height: inherit;
+
+  .row {
+    flex: 1;
+  }
+
+  .Sign-In {
+    width: 136px;
+    height: 48px;
+    border-radius: 3.2px;
+    border: solid 1px #ffffff;
+    font-family: OpenSans;
+    font-size: 14px;
+    line-height: 0.6;
+    text-align: center;
+    color: #ffffff !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.Consumer-Right-Logo {
+  background-image: url('../../../assets/signup/contractor.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: #000000;
+}
+
+.Consumer-Left-Logo {
+  background-image: url('../../../assets/signup/consumer.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: #000000;
+}
+
+.Registration-Nav {
+  position: absolute;
+  top: 2%;
+  z-index: 1000;
+}
+
+@media only screen and (max-width: 576px) {
+  .Registration-Nav {
+    top: 0;
+  }
+
+  .mjv-logo {
+    margin-left: 0;
+  }
+  
+  .Sign-in-container {
+    margin-right: 0;
+    width: auto;
+  }
+
+  .Already-Have-an-account {
+    display: none;
+  }
+}

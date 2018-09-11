@@ -1,0 +1,186 @@
+.Main-Root-Router-Wrapper {
+  width: inherit;
+  height: inherit;
+
+  .Contractor-Wrapper {
+    width: inherit;
+    height: inherit;
+    padding-left: 0;
+    padding-right: 0;
+
+    .row {
+      width: inherit;
+      height: inherit;
+    }
+
+    .w-40 {
+      width: 40% !important;
+    }
+
+    .Contractor-Main {
+      .Next-Step, .Finish-Sign-Up {
+        height: 48px;
+        font-family: Helvetica;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        border-radius: 5px;
+        background-color: #1e87f0;
+        box-shadow: 0 10px 20px 0 rgba(30, 135, 240, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .input-group-text {
+        background: transparent;
+        border-left: none;
+      }
+
+      #Consumer-Password {
+        border-right: none;
+      }
+
+      input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        font-family: OpenSans;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: #cccccc;
+      }
+
+      input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        font-family: OpenSans;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: #cccccc;
+      }
+
+      input::-ms-input-placeholder { /* Microsoft Edge */
+        font-family: OpenSans;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: #cccccc;
+      }
+
+      .Input-Label {
+        width: 93.6px;
+        height: 10.5px;
+        font-family: OpenSans;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.88;
+        letter-spacing: normal;
+        color: #666666;
+      }
+
+      .Sign-up-as-a {
+        opacity: 0.72;
+        font-family: OpenSans;
+        font-size: 14px;
+        line-height: 0.57;
+        color: #4a4a4a;
+      }
+
+      .Contractor {
+        width: 151px;
+        height: auto;
+        font-family: Helvetica;
+        font-size: 28px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.64;
+        letter-spacing: normal;
+        color: #4a4a4a;
+
+        &::after {
+          display: block;
+          content: "";
+          border-bottom: 2px solid #1e87f0;
+          width: 56px;
+          height: 1px;
+          margin-top: 2rem;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+}
+
+.Consumer-Sidebar {
+  background-color: #1f3e5c;
+
+  .Vate {
+    width: 91px;
+    height: 28px;
+    font-family: Helvetica;
+    font-size: 48px;
+    line-height: 0.58;
+    color: #ffffff;
+    margin-top: 80%;
+    padding-top: 40%;
+  }
+
+  a, a:hover, a:visited {
+    text-decoration: none;
+    color: #ffffff
+  }
+
+  .Social-Icons {
+    font-size: 18px;
+    margin-top: 40%;
+
+    .fa {
+      color: #ffffff;
+    }
+  }
+}
+
+.Consumer-Footer {
+  margin-top: 4rem !important;
+
+  .Already-Have-an-acco {
+    font-family: OpenSans;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.73;
+    letter-spacing: normal;
+    color: #9b9b9b;
+    margin: 0;
+  }
+
+  a.Sign-In {
+    width: 175.4px;
+    height: 48px;
+    font-family: OpenSans;
+    font-size: 14.8px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.57;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1e87f0;
+    border-radius: 3.2px;
+    background-color: #ffffff;
+    border: solid 1px #1e87f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
