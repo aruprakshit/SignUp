@@ -1,0 +1,311 @@
+.arrow-left {
+  width: 50px;
+  height: 16px;
+  object-fit: contain;
+  background: url('../Assets/arrow-left.svg') 50% 50% no-repeat;
+  display: inline-block;
+}
+
+.Main-Article {
+  background-color: #fff;
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.02);
+  border-radius: 10px;
+
+  .Mask {
+    width: 256px;
+    height: 190px;
+    border-radius: 5px;
+    background-color: #d8d8d8;
+
+    .image {
+      width: 100%;
+      border-radius: 5px;
+      max-height: 100%;
+    }
+  }
+
+  .Header {
+    .Active-Btn {
+      margin-left: auto;
+      border-radius: 5px;
+      border: solid 0.6px #1e87f0;
+      font-family: OpenSans;
+      font-weight: 300;
+      width: 103.5px;
+      color: #1e87f0;
+    }
+    .Tags {
+      display: flex;
+      flex-direction: column;
+      height: 70px;
+      flex-wrap: wrap;
+      font-family: OpenSans;
+      font-size: 14px;
+      justify-content: space-between;
+
+      div:nth-child(2n + 3),
+      div:nth-child(2n + 4) {
+        margin-left: 0.5rem;
+      }
+
+      div {
+        width: 90px;
+        height: 28px;
+        border-radius: 5px;
+        background-color: rgba(30, 135, 240, 0.15);
+        display: flex;
+
+        span {
+          font-size: 14px;
+          line-height: 0.86;
+          text-align: center;
+          color: #1e87f0;
+          margin: auto;
+        }
+      }
+    }
+
+    .Meta {
+      font-family: OpenSans;
+      padding: 2px;
+
+      .Combined-Shape {
+        width: 12px;
+        height: 12px;
+      }
+
+      .Project-Name {
+        color: #4a4a4a;
+        font-size: 18px;
+        height: 12px;
+        line-height: 0.67;
+        margin-bottom: 1rem;
+      }
+
+      .Project-Categ {
+        height: 10px;
+        font-size: 14px;
+        line-height: 0.71;
+        color: #1e87f0;
+        margin-bottom: 0.7rem;
+      }
+
+      .Project-Duration {
+        height: 10px;
+        font-size: 14px;
+        line-height: 0.71;
+        color: #9b9b9b;
+      }
+    }
+  }
+}
+
+.vertically-aligned {
+  /* older webkit */
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-justify-content: center;
+
+  /* older firefox */
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+
+  /* IE10*/
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+
+  /* newer webkit */
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+
+  /* Standard Form - IE 11+, FF 22+, Chrome 29+, Opera 17+ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-header-nav {
+  margin-top: 6%;
+}
+
+nav[aria-label='breadcrumb'] {
+  .back {
+    margin-right: 3rem;
+  }
+  .breadcrumb-item + .breadcrumb-item {
+    a,
+    span {
+      margin-left: 0.8rem;
+    }
+    &::before {
+      content: '';
+      width: 20px;
+      height: 16px;
+      background: url('../Assets/chevron-down.svg') 50% 50% no-repeat;
+      -webkit-transform: rotate(270deg);
+      -moz-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+      -o-transform: rotate(270deg);
+      transform: rotate(270deg);
+    }
+  }
+
+  .breadcrumb {
+    background: transparent;
+
+    .breadcrumb-item {
+      font-family: OpenSans;
+      font-size: 14px;
+      height: 16px;
+      color: #4a4a4a;
+      &.active {
+        color: #9b9b9b;
+      }
+    }
+  }
+}
+
+.Main {
+  .nav .nav-item {
+    .nav-link {
+      font-family: OpenSans;
+      font-size: 18px;
+      line-height: 0.67;
+      text-align: center;
+      color: #4a4a4a;
+      text-align: center;
+      display: inline-block;
+
+      &.active {
+        color: #1e87f0;
+        border-bottom: solid 0.6px #1e87f0;
+        height: 101%;
+      }
+    }
+  }
+
+  .Line {
+    border-bottom: solid 0.6px #cccccc;
+  }
+
+  // Questions component styles
+  .Questions {
+    .Ask-question {
+      width: 96px;
+      height: 10px;
+      font-family: OpenSans;
+      font-size: 16px;
+      text-align: center;
+      color: #1e87f0;
+    }
+
+    .Question-List-Item {
+      font-family: OpenSans;
+
+      .Title {
+        font-size: 12px;
+        color: #9b9b9b;
+        margin-bottom: 0;
+      }
+
+      .Answer {
+        font-size: 14px;
+        color: #4a4a4a;
+
+        .Label {
+          color: #9b9b9b;
+        }
+      }
+    }
+  }
+
+  // Bids component styles
+  .Project-Bids {
+    .Place-Bid {
+      width: 200px;
+      height: 48px;
+      border-radius: 5px;
+      background-color: #1e87f0;
+      box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+      font-family: OpenSans;
+      color: #fff;
+    }
+
+    .Accept-Bid-Label {
+      color: #1e87f0;
+      font-family: OpenSans;
+      font-size: 12px;
+      span {
+        color: #666666;
+      }
+    }
+    .Accept-Bid {
+      font-family: OpenSans;
+      font-size: 12px;
+      text-align: center;
+      color: #1e87f0;
+    }
+
+    .Bid-Label {
+      font-family: OpenSans;
+      font-size: 12px;
+
+    }
+
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      font-family: OpenSans;
+      font-size: 13px;
+      color: #cccccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      font-family: OpenSans;
+      font-size: 13px;
+      color: #cccccc;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      font-family: OpenSans;
+      font-size: 13px;
+      color: #cccccc;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      font-family: OpenSans;
+      font-size: 13px;
+      color: #cccccc;
+    }
+  }
+
+  // Gallery
+  .Project-Gallery {
+    .Project-Gallery-Item:nth-child(4n + 0) {
+      margin-bottom: 0.5rem;
+    }
+
+    &::after {
+      content: '';
+      flex: 0 0 164.1px;
+    }
+
+    .Project-Gallery-Item {
+      width: 164.1px;
+      height: 164.1px;
+      border-radius: 6.1px;
+      background-color: #d8d8d8;
+
+      &:first-child {
+        margin-bottom: 0.5rem;
+      }
+
+      .image {
+        width: 100%;
+        border-radius: 5px;
+        max-height: 100%;
+      }
+    }
+  }
+}
